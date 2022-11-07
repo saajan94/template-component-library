@@ -1,12 +1,10 @@
 {
-  "name": "component-library",
-  "version": "0.0.1",
-  "exports": {
-    "packageJson": "./package.json"
-  },
+  "name": "@saajan94/template-component-library",
+  "version": "0.0.2",
   "description": "Custom React component library",
   "scripts": {
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "build": "rollup -c && npm pack"
   },
   "author": "Saajan",
   "license": "ISC",
@@ -27,5 +25,8 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "type": "module"
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/saajan94"
+  }
 }
